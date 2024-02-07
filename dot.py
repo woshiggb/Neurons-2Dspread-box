@@ -4,7 +4,7 @@ np.random.seed(42)
 
 import pickle
 
-class NLP:
+class NGF:
     def __init__(self,box,s=4):
         if (len(box)==0):
             raise Exception("The box not have big or small")
@@ -236,7 +236,7 @@ class NLP:
         self.__dict__.update(obj.__dict__)
 
 #cin = [2,1,3,3]
-#N = NLP(cin,4)
+#N = NGF(cin,4)
 #x = [[0.88],[0.66]]
 #y = [[i[0]-0.22,0] for i in x]
 #x = [[114,514],[910,1919],[125,346]]
