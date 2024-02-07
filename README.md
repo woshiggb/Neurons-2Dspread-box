@@ -14,7 +14,7 @@ kil - Cleans up memory.
 train_a - Takes sample input cin, sample output out, number of training epochs ep, and learning rate lr (which needs to increase as the value increases).
 train_b - Similar to train_a, but generally yields better training results.
 ### Code Example
-\`\`\`python
+```python
 
 from dot import NGF
 
@@ -42,10 +42,13 @@ print(N.wbox) # Print bias list
 N.forward([0.2], tr=True) # Perform one forward propagation, tr indicates to print the process
 
 for i in range(len(N.log[-1])):
+
     if (i % N.s == 0):
+
         print()
+
     print(N.log[-1][i], end=" ") # Print the box configuration
     
-\`\`\`
+```
 
 This code snippet demonstrates how to initialize the NGF class with a specific structure (cin), train it with given inputs and expected outputs (x and y), save the trained model, load it again, and finally perform a forward propagation to see the output. The tr parameter in forward method is used to print the propagation process for debugging or understanding the flow.
