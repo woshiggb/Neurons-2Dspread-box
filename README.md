@@ -42,11 +42,8 @@ print(N.wbox) # Print bias list
 N.forward([0.2], tr=True) # Perform one forward propagation, tr indicates to print the process
 
 for i in range(len(N.log[-1])):
-
     if (i % N.s == 0):
-
         print()
-
     print(N.log[-1][i], end=" ") # Print the box configuration
     
 ```
